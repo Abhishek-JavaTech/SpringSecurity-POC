@@ -26,4 +26,6 @@ Given
 4. as we implemented JdbcUserDetailsManager, our database tables needs to be of with name users/authority
 5. for users table, username, password, enabled these fields are mandatory
 6. for authority username, authority these fields are mandatory
+6.2 we have also added Authentication instance from SecurityContextHolder to retrieve authenticated user details
 7. this project can be extended to support Liquibase / Global exception handling / AOP
+
