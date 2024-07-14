@@ -25,5 +25,10 @@ Given
 2.2 here while adding this, you will get 403 Forbidden error and to test for CSRF we need to use another api which is
     http://localhost:8082/users/test
 
+3. when you hit #2 first time you will get 403 Forbidden error, and you might notice in DB Token table you will have IDENTIFIER as admin and some UUID token value
+4. copy this token value from record and try sending #2 request again but this time also add copied token value to header as
+X-CSRF-TOKEN -> {token value}
+5. this time you wont get 403 error
+
 
 
